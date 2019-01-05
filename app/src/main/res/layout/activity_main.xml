@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:orientation="vertical"
+    >
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="只有两个字的时候"
+                  android:padding="5dp"
+                 android:background="@android:color/darker_gray"
+        />
+        <vip.skyhand.typewritertextview.typerwriter.TypeWriterTextView
+                android:id="@+id/mTVTextLess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="40dp"
+
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="单纯的打字"
+                  android:padding="5dp"
+                  android:background="@android:color/darker_gray"
+        />
+        <vip.skyhand.typewritertextview.typerwriter.TypeWriterTextView
+                android:id="@+id/mTVTextNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="40dp"
+
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="可以改变部分文字大小"
+
+                  android:padding="5dp"
+                  android:background="@android:color/darker_gray"
+        />
+        <vip.skyhand.typewritertextview.typerwriter.TypeWriterTextView
+                android:id="@+id/mTVTextSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="40dp"
+
+
+        />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="可以改变部分文字颜色"
+
+                  android:padding="5dp"
+                  android:background="@android:color/darker_gray"
+        />
+        <vip.skyhand.typewritertextview.typerwriter.TypeWriterTextView
+                android:id="@+id/mTVTextColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="40dp"
+
+
+        />
+
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:text="可以同时改变部分文字大小和颜色"
+
+                  android:padding="5dp"
+                  android:background="@android:color/darker_gray"
+        />
+        <vip.skyhand.typewritertextview.typerwriter.TypeWriterTextView
+                android:id="@+id/mTVTextColorSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:lineSpacingExtra="5dp"
+
+        />
+    </LinearLayout>
+
+
+</ScrollView>
