@@ -1,1 +1,1 @@
-include ':demo', ':TypeWriter'
+include ':demo', ':typewriter'
