@@ -1,8 +1,7 @@
-package vip.skyhand.typewritertextview.typerwriter
+package vip.skyhand.typerwriter
 
 import android.text.TextPaint
 import android.text.style.CharacterStyle
-import vip.skyhand.typewritertextview.typerwriter.BaseSpan
 
 open class AlphaSpan(override var mAlpha: Float) : CharacterStyle() , BaseSpan {
 

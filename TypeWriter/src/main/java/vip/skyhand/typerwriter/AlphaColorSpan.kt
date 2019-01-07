@@ -1,9 +1,8 @@
-package vip.skyhand.typewritertextview.typerwriter
+package vip.skyhand.typerwriter
 
 import android.support.annotation.ColorInt
 import android.text.TextPaint
 import android.text.style.ForegroundColorSpan
-import vip.skyhand.typewritertextview.typerwriter.BaseSpan
 
 class AlphaColorSpan(@ColorInt val mColor: Int, override var mAlpha: Float = 0F) : ForegroundColorSpan(mColor),
     BaseSpan {

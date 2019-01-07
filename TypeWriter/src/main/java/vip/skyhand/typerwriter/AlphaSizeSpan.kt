@@ -1,8 +1,7 @@
-package vip.skyhand.typewritertextview.typerwriter
+package vip.skyhand.typerwriter
 
 import android.text.TextPaint
 import android.text.style.AbsoluteSizeSpan
-import vip.skyhand.typewritertextview.typerwriter.BaseSpan
 
 
 /**

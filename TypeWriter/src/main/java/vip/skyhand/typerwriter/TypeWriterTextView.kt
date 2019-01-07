@@ -1,8 +1,7 @@
-package vip.skyhand.typewritertextview.typerwriter
+package vip.skyhand.typerwriter
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.Color
 import android.support.annotation.ColorInt
 import android.support.v4.view.ViewCompat
 import android.support.v7.widget.AppCompatTextView
@@ -17,6 +16,8 @@ import android.widget.TextView
 
 /**
  * 打字效果的Textview，可以设置文字颜色和大小
+ * @author SkyHand
+ * @url https://github.com/tpnet/TypeWriterTextView
  */
 class TypeWriterTextView(context: Context, attrs: AttributeSet? = null): AppCompatTextView (context,attrs){
 
@@ -24,7 +25,7 @@ class TypeWriterTextView(context: Context, attrs: AttributeSet? = null): AppComp
     private var mInterpolator: Interpolator = LinearInterpolator()
     private var mStart: Long = 0
     //每个字的时长
-    private var mDurationPerLetter: Int = 40
+    private var mDurationPerLetter: Int = 30
 
     private var mFadeSpanText: SpannableString = SpannableString("")
     private var mText: String = ""

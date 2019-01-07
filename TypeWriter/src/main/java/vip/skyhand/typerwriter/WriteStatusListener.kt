@@ -1,4 +1,4 @@
-package vip.skyhand.typewritertextview.typerwriter
+package vip.skyhand.typerwriter
 
 
 interface WriteStatusListener {

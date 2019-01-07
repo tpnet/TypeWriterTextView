@@ -4,8 +4,9 @@ import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import vip.skyhand.typewritertextview.typerwriter.TypeWriterTextView
-import vip.skyhand.typewritertextview.typerwriter.WriteStatusListener
+import android.view.animation.DecelerateInterpolator
+import vip.skyhand.typerwriter.TypeWriterTextView
+import vip.skyhand.typerwriter.WriteStatusListener
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,13 +27,16 @@ class MainActivity : AppCompatActivity() {
         var sizeStartList = arrayListOf(5,11)
         var sizeEndList = arrayListOf(8,15)
         val textSize = findViewById<TypeWriterTextView>(R.id.mTVTextSize)
-        textSize.setTextWithSize(getString(R.string.text),80,sizeStartList,sizeEndList)
+        textSize.setDurationPerLetter(20)  //设置每个文字的速度
+
+        textSize.setTextWithSize(getString(R.string.text),60,sizeStartList,sizeEndList)
 
         //部分文字不同颜色的打字
         //变大第22-26的字 和 30-35的字
         var colorStartList = arrayListOf(22,30)
         var colorEndList = arrayListOf(26,35)
         val textColor = findViewById<TypeWriterTextView>(R.id.mTVTextColor)
+        textColor.setInterpolator(DecelerateInterpolator())  //设置插值器
         textColor.setTextWithColor(getString(R.string.text),Color.RED,colorStartList,colorEndList)
 
         //部分文字不同颜色和大小的打字
