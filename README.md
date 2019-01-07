@@ -2,6 +2,7 @@
 
 Android打字机效果，渐变过度、可以同时设置文字大小和颜色
 
+![效果图](https://raw.githubusercontent.com/tpnet/TypeWriterTextView/master/img/demo.gif)
 
 
 # 使用
