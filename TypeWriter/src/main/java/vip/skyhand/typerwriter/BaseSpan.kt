@@ -1,5 +1,8 @@
 package vip.skyhand.typerwriter
 
+/**
+ * 基础span
+ */
 interface BaseSpan{
 
     var mAlpha: Float

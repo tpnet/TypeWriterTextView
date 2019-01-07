@@ -67,7 +67,6 @@ class TypeWriterTextView(context: Context, attrs: AttributeSet? = null): AppComp
 
         val length = text.length
         if (length == 0) return
-        Log.e("@@","长度${length}")
 
         if(isClearColorSize){
             clearList()
@@ -178,17 +177,10 @@ class TypeWriterTextView(context: Context, attrs: AttributeSet? = null): AppComp
 
             val letters = mFadeSpanText.getSpans(0, mFadeSpanText.length, BaseSpan::class.java)
 
-//            letters.forEachIndexed { index, baseSpan ->
-//                val delta = Math.max(Math.min(deltaTap - index * mDurationPerLetter, mDurationPerLetter.toLong()), 0).toFloat()
-//                baseSpan.setAlpha(mInterpolator.getInterpolation(delta / mDurationPerLetter))
-//            }
-//
-            for(i in letters.indices){
-                val delta = Math.max(Math.min(deltaTap - i * mDurationPerLetter, mDurationPerLetter.toLong()), 0).toFloat()
-                letters[i].setAlpha(mInterpolator.getInterpolation(delta / mDurationPerLetter))
-
+            letters.forEachIndexed { index, baseSpan ->
+                val delta = Math.max(Math.min(deltaTap - index * mDurationPerLetter, mDurationPerLetter.toLong()), 0).toFloat()
+                baseSpan.setAlpha(mInterpolator.getInterpolation(delta / mDurationPerLetter))
             }
-
 
             if (deltaTap < mDurationPerLetter * letters.size) {
                 //时间还没到，绘制还没完成，继续绘制

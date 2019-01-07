@@ -2,6 +2,9 @@
 
 Android打字机效果，渐变过度、可以同时设置文字大小和颜色
 
+
+效果图丢帧，请下载demo查看
+
 ![效果图](https://raw.githubusercontent.com/tpnet/TypeWriterTextView/master/img/demo.gif)
 
 
@@ -47,7 +50,8 @@ Android打字机效果，渐变过度、可以同时设置文字大小和颜色
 ```
     textNormal.setDurationPerLetter(20)  //设置每个文字的速度
     textNormal.setInterpolator(DecelerateInterpolator())  //设置渐变插值器
-    
+    textNormal.setComplete()   //瞬间打字完成
+
     //监听打字状态
     textNormal.setWriteStatusListener(object : WriteStatusListener {
         override fun onWriteStart(view: TypeWriterTextView) {
